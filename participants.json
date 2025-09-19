@@ -7,7 +7,7 @@
         "TermURL": "nb:ParticipantID",
         "Label": ""
       },
-      "Identifies": "participant"
+      "VariableType": "Identifier"
     }
   },
   "age": {
@@ -18,15 +18,16 @@
         "TermURL": "nb:Age",
         "Label": ""
       },
-      "Transformation": {
-        "TermURL": "nb:FromInt",
-        "Label": "integer data"
-      },
       "MissingValues": [
         "",
         "n/a",
         " "
-      ]
+      ],
+      "Format": {
+        "TermURL": "nb:FromInt",
+        "Label": "integer data"
+      },
+      "VariableType": "Continuous"
     }
   },
   "gender": {
@@ -48,7 +49,8 @@
           "TermURL": "snomed:248152002",
           "Label": ""
         }
-      }
+      },
+      "VariableType": "Categorical"
     }
   },
   "IQ_Raven": {
@@ -60,9 +62,10 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:trm_4f24211a03b07",
+        "TermURL": "snomed:718148002",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "PANAS_ses-01_bef_pos": {
@@ -74,9 +77,10 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949d09",
+        "TermURL": "snomed:304755000",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "PANAS_ses-01_bef_neg": {
@@ -88,9 +92,10 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949d09",
+        "TermURL": "snomed:304755000",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "PANAS_ses-01_aft_pos": {
@@ -102,9 +107,10 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949d09",
+        "TermURL": "snomed:304755000",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "PANAS_ses-01_aft_neg": {
@@ -116,9 +122,10 @@
         "Label": ""
       },
       "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949d09",
+        "TermURL": "snomed:304755000",
         "Label": ""
-      }
+      },
+      "VariableType": "Collection"
     }
   },
   "PANAS_ses-02_bef_pos": {
@@ -253,7 +260,8 @@
           "TermURL": "snomed:310496002",
           "Label": ""
         }
-      }
+      },
+      "VariableType": "Categorical"
     }
   },
   "ICD-10-post": {
@@ -354,16 +362,6 @@
   },
   "Edinburgh": {
     "Description": "Edinburgh Handedness Inventory",
-    "Units": "scores",
-    "Annotations": {
-      "IsAbout": {
-        "TermURL": "nb:Assessment",
-        "Label": ""
-      },
-      "IsPartOf": {
-        "TermURL": "cogatlas:tsk_4a57abb949a41",
-        "Label": ""
-      }
-    }
+    "Units": "scores"
   }
 }
